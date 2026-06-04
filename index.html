@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>La geografía de la ciencia de alto impacto</title>
+		<title>Cartografía de la ciencia</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,7 +19,7 @@
 
 				<!-- Intro -->
 					<div id="intro">
-						<h1>La geografía de la ciencia de alto impacto.</h1>
+						<h1>Cartografía de la ciencia</h1>
 						<p>Producción, colaboración internacional y desigualdades en la investigación global
 							a partir de datos de OpenAlex.</p>
 						<ul class="actions">
@@ -32,6 +32,7 @@
 				<!-- Nav -->
 				<nav id="nav">
 				  <ul class="links">
+		 	       <li><a href="#introduccion">Introducción</a></li>
 				    <li class="active"><a href="#mapa">Mapa</a></li>
 				    <li><a href="#ranking">Ranking temporal</a></li>
 				    <li><a href="#colaboracion">Colaboración</a></li>
@@ -44,6 +45,60 @@
 					<div id="main">
 
 						<!-- Featured Post -->
+
+<article class="post featured" id="introduccion">
+  <header class="major">
+    <span class="date">Introducción</span>
+
+```
+<h2>
+  Una mirada visual a la ciencia más citada
+</h2>
+
+<p>
+  Este proyecto explora la evolución de una selección de publicaciones científicas
+  especialmente citadas entre 2000 y 2024. Los datos proceden de
+  <a href="https://openalex.org/" target="_blank" rel="noopener noreferrer">OpenAlex</a>,
+  una base de datos abierta que reúne información bibliográfica sobre publicaciones,
+  autores, instituciones, países, revistas y áreas de conocimiento.
+</p>
+```
+
+  </header>
+
+  <p>
+    El conjunto de datos utilizado se ha filtrado para trabajar únicamente con publicaciones
+    de tipo <em>article</em> y con aquellas que se encuentran dentro del 1&nbsp;% más citado
+    de su área y año. Por tanto, la visualización no representa toda la producción científica
+    mundial, sino una aproximación a la distribución y evolución de las publicaciones más
+    citadas registradas en OpenAlex.
+  </p>
+
+  <p>
+    El objetivo no es construir un ranking definitivo de la ciencia mundial, sino ofrecer
+    una lectura visual de algunos patrones relevantes: dónde se concentra esta producción,
+    cómo cambia el liderazgo entre países, qué redes de colaboración internacional se forman,
+    cómo evoluciona la producción por dominios científicos y qué tendencia muestra el género
+    inferido en las autorías.
+  </p>
+
+  <p>
+    Los datos han sido extraídos y preparados mediante Python, generando distintos conjuntos
+    de datos adaptados a cada visualización. En los mapas y gráficos por país, una publicación
+    con participación de varios países puede contar para cada uno de ellos. Este criterio permite
+    analizar la presencia científica y la colaboración internacional, aunque no representa un
+    reparto exclusivo de la autoría de cada publicación.
+  </p>
+
+  <p>
+    La historia visual combina mapas, rankings animados, redes de colaboración, gráficos
+    temporales y visualizaciones exploratorias. La intención es facilitar una lectura progresiva:
+    primero observar la distribución geográfica, después analizar los cambios en el tiempo y,
+    finalmente, incorporar dimensiones como la colaboración, los dominios científicos y la
+    desigualdad de género inferida.
+  </p>
+</article>
+
 
 				<article class="post featured" id="mapa">
 				  <header class="major">
