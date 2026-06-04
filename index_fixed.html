@@ -1,0 +1,429 @@
+			<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Cartografía de la ciencia más citada</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+			/* Ajustes del menú superior */
+			#nav {
+				overflow-x: auto;
+			}
+
+			#nav ul.links {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				width: 100%;
+			}
+
+			#nav ul.links li a {
+				white-space: nowrap;
+				padding-left: 1rem;
+				padding-right: 1rem;
+				font-size: 0.78rem;
+			}
+
+			@media screen and (max-width: 980px) {
+				#nav ul.links {
+					justify-content: flex-start;
+					flex-wrap: nowrap;
+					overflow-x: auto;
+					-webkit-overflow-scrolling: touch;
+				}
+
+				#nav ul.links li a {
+					font-size: 0.72rem;
+					padding-left: 0.8rem;
+					padding-right: 0.8rem;
+				}
+			}
+
+			.visual-section {
+				margin-top: 3rem;
+			}
+
+			.note {
+				font-size: 0.9rem;
+				color: #666;
+				line-height: 1.5;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Cartografía de la ciencia</h1>
+						<p>Producción, colaboración internacional y desigualdades en la investigación global
+							a partir de datos de OpenAlex.</p>
+						<ul class="actions">
+							<li><a href="#introduccion" class="button icon solid solo fa-arrow-down scrolly">Continuar</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+
+				<!-- Nav -->
+				<nav id="nav">
+				  <ul class="links">
+				    <li class="active"><a href="#introduccion">Introducción</a></li>
+				    <li><a href="#mapa">Mapa</a></li>
+				    <li><a href="#ranking">Ranking</a></li>
+				    <li><a href="#colaboracion">Colaboración</a></li>
+				    <li><a href="#produccion-colaboracion">Producción vs colaboración</a></li>
+				    <li><a href="#dominios-cientificos">Dominios</a></li>
+				    <li><a href="#genero-autorias">Género</a></li>
+				  </ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+
+<article class="post featured" id="introduccion">
+  <header class="major">
+    <span class="date">Introducción</span>
+
+<h2>
+  Una mirada visual a la ciencia más citada
+</h2>
+
+<p>
+  Este proyecto explora la evolución de una selección de publicaciones científicas
+  especialmente citadas entre 2000 y 2024. Los datos proceden de
+  <a href="https://openalex.org/" target="_blank" rel="noopener noreferrer">OpenAlex</a>,
+  una base de datos abierta que reúne información bibliográfica sobre publicaciones,
+  autores, instituciones, países, revistas y áreas de conocimiento.
+</p>
+
+  </header>
+
+  <p>
+    El conjunto de datos utilizado se ha filtrado para trabajar únicamente con publicaciones
+    de tipo <em>article</em> y con aquellas que se encuentran dentro del 1&nbsp;% más citado
+    de su área y año. Por tanto, la visualización no representa toda la producción científica
+    mundial, sino una aproximación a la distribución y evolución de las publicaciones más
+    citadas registradas en OpenAlex.
+  </p>
+
+  <p>
+    El objetivo no es construir un ranking definitivo de la ciencia mundial, sino ofrecer
+    una lectura visual de algunos patrones relevantes: dónde se concentra esta producción,
+    cómo cambia el liderazgo entre países, qué redes de colaboración internacional se forman,
+    cómo evoluciona la producción por dominios científicos y qué tendencia muestra el género en las autorías.
+  </p>
+
+</article>
+
+
+				<article class="post featured" id="mapa">
+				  <header class="major">
+				    <h2>¿Dónde se concentra la ciencia más citada?</h2>
+  					  <p>
+  					    El mapa coroplético muestra la distribución geográfica de las publicaciones
+  					    científicas entre 2000 y 2024.
+				     </p>
+  				</header>
+
+ 		   	 <div class="viz-container">
+ 			   <div class='tableauPlaceholder' id='viz1780553091240' style='position: relative'><noscript><a href='#'><img alt='Mapa coroplético - 2000 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;K9&#47;K9D7B9453&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;K9D7B9453' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;K9&#47;K9D7B9453&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='es-ES' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1780553091240');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+			  </div>
+
+<section class="visual-section">
+  <p>
+    En conjunto, las visualizaciones muestran una ciencia cada vez más amplia,
+    más internacional y menos concentrada en el eje tradicional Estados Unidos-Europa.
+    El crecimiento de China y de Asia modifica claramente la geografía de la producción
+    científica, mientras que los dominios científicos evolucionan de forma desigual:
+    Physical Sciences mantiene un peso central, pero Social Sciences gana protagonismo
+    a lo largo del periodo.
+  </p>
+
+</section>
+					
+				</article>
+
+	<article class="post featured" id="ranking">
+  <header class="major">
+    <span class="date">2000–2024</span>
+    <h2>¿Quién lidera la producción científica?</h2>
+    <p>
+      El mapa permite ver dónde se concentra la ciencia, pero no siempre
+      facilita identificar los cambios en el liderazgo científico. Para complementar esa
+      lectura, esta visualización muestra la evolución del ranking de países con mayor
+      número de publicaciones a lo largo del tiempo.
+    </p>
+  </header>
+
+  <p>
+    La carrera de barras permite observar qué países ocupan las primeras posiciones en
+    cada año y cómo varía su peso relativo en el conjunto de la producción científica
+    más citada. Esta visualización ayuda a detectar tendencias de crecimiento,
+    consolidación o pérdida de protagonismo entre países.
+  </p>
+
+  <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/28563536">
+	  <noscript><img src="https://public.flourish.studio/visualisation/28563536/thumbnail" width="100%" alt="bar-chart-race visualization" /></noscript></div>
+<p>
+  La carrera de barras evidencia un desplazamiento progresivo del liderazgo científico.
+  Estados Unidos domina claramente al inicio del periodo, pero China protagoniza el mayor
+  crecimiento y pasa a ocupar la primera posición en los últimos años. Al mismo tiempo,
+  el peso conjunto de los diez primeros países disminuye, lo que apunta a una ciencia más
+  citada cada vez menos concentrada en unos pocos actores.
+</p>
+</article>
+
+
+						
+<article class="post featured" id="colaboracion">
+  <header class="major">
+    <span class="date">Colaboración internacional</span>
+    <h2>La ciencia no se produce de forma aislada</h2>
+    <p>
+      Después de observar dónde se concentra la producción científica y cómo cambia
+		el liderazgo entre países, el siguiente paso es analizar cómo se
+      conectan entre sí. La ciencia contemporánea no se desarrolla únicamente dentro
+      de fronteras nacionales, sino a través de redes de colaboración internacional.
+    </p>
+  </header>
+
+  <p>
+    Esta visualización representa las relaciones de colaboración entre países a partir
+    de las publicaciones en las que participan autores o instituciones de más de un país.
+    Cada conexión une dos países que aparecen conjuntamente en una publicación, y el
+    grosor o intensidad de la línea refleja el número de colaboraciones registradas entre
+    ambos. De este modo, el mapa permite identificar los principales ejes de colaboración,
+    los países que actúan como nodos centrales y las relaciones científicas más intensas.
+  </p>
+
+  <p>
+    La lectura de esta red complementa el análisis geográfico anterior: no solo importa
+    qué países producen más, sino también cómo se integran en el sistema científico global.
+    Algunos países destacan por su volumen de publicaciones, mientras que otros adquieren
+    relevancia por su posición dentro de la red internacional de colaboración.
+  </p>
+
+  <div class="viz-container">
+  <div class="flourish-embed flourish-globe" data-src="visualisation/28562947"><noscript><img src="https://public.flourish.studio/visualisation/28562947/thumbnail" width="100%" alt="globe visualization" /></noscript></div>
+  </div>
+
+  <div class="viz-container">
+  <div class="flourish-embed flourish-globe" data-src="visualisation/29233084"><noscript><img src="https://public.flourish.studio/visualisation/29233084/thumbnail" width="100%" alt="globe visualization" /></noscript></div>  </div>
+
+  <p>
+    Es importante tener en cuenta que esta red se ha construido a partir de pares de países:
+    cuando una publicación incluye varios países, se generan todas las combinaciones posibles
+    entre ellos. Por tanto, la visualización muestra relaciones de coautoría internacional
+    agregadas, no flujos direccionales entre países.
+  </p>
+
+<p>
+  La red de colaboración muestra que la ciencia se articula cada vez más a través
+  de conexiones internacionales. El volumen agregado de colaboraciones entre países crece con
+  fuerza entre 2000 y 2024.
+</p>
+
+<p>
+  Estados Unidos aparece como el nodo central de la red durante todo el periodo, pero el peso
+  de China aumenta de forma muy marcada. En 2024, la conexión China–Estados Unidos es la más
+  intensa del conjunto de datos.
+</p>
+
+<p>
+  Las relaciones más fuertes siguen concentrándose entre grandes potencias científicas:
+  Estados Unidos, Reino Unido, Alemania, Francia, China, Canadá, Australia, Italia y España
+  aparecen de forma recurrente entre los principales nodos de colaboración.
+</p>
+
+<p>
+  Por dominios, Physical Sciences y Health Sciences concentran la mayor parte de las conexiones,
+  aunque la red permite observar diferencias según el campo científico seleccionado.
+</p>
+
+	
+</article>
+			
+<article class="post featured" id="produccion-colaboracion">
+  <header class="major">
+    <span class="date">Producción y colaboración</span>
+
+    <h2>
+      Producir mucho no siempre implica colaborar más
+    </h2>
+
+    <p>
+      Cada punto representa un país. El eje horizontal muestra el número de artículos
+      producidos y el eje vertical el porcentaje publicado en colaboración internacional.
+      La animación permite observar cómo cambia esta relación entre 2000 y 2024.
+    </p>
+  </header>
+
+
+  <div class="flourish-embed flourish-scatter" data-src="visualisation/29247965"><noscript><img src="https://public.flourish.studio/visualisation/29247965/thumbnail" width="100%" alt="scatter visualization" /></noscript></div>
+
+<p>
+  El gráfico muestra que producir más no implica necesariamente colaborar más. Algunos países
+  con mucho volumen, como China o Estados Unidos, se sitúan en posiciones muy distintas en
+  cuanto a colaboración internacional.
+</p>
+
+<p>
+  La tasa media de colaboración aumenta claramente durante el periodo: pasa de alrededor del
+  41,6&nbsp;% en 2000 a casi el 70&nbsp;% en 2024. Esto sugiere que la ciencia más citada se vuelve
+  progresivamente más internacional.
+</p>
+
+<p>
+  Los países europeos tienden a presentar porcentajes de colaboración muy altos. En 2024,
+  Reino Unido, Alemania, Francia, España, Países Bajos o Suiza superan el 80&nbsp;% de artículos
+  en colaboración internacional.
+</p>
+
+<p>
+  China es el caso más llamativo: alcanza el mayor volumen de publicaciones en 2024, pero con
+  una tasa de colaboración internacional más baja que la de otros países líderes. Esto la separa
+  visualmente del grupo de países europeos y norteamericanos.
+</p>
+
+</article>
+
+<article class="post featured" id="dominios-cientificos">
+  <header class="major">
+    <span class="date">Dominios científicos</span>
+
+    <h2>
+      El crecimiento de la ciencia más citada no se reparte igual entre campos
+    </h2>
+
+    <p>
+      Hasta ahora hemos visto dónde se concentra la ciencia y cómo se conectan
+      los países entre sí. Pero la investigación no crece de forma homogénea en todos los campos:
+      algunos dominios concentran mayor volumen y otros ganan presencia a lo largo del tiempo.
+    </p>
+  </header>
+
+  <section class="visual-section">
+    <h3>Evolución global por dominio científico</h3>
+
+    <p>
+      Este gráfico muestra la evolución anual del número de artículos situados en el 1&nbsp;% más
+      citado de OpenAlex, agrupados por dominio científico. Las áreas permiten ver qué campos
+      aportan más volumen al crecimiento total entre 2000 y 2024.
+    </p>
+
+	<div class="flourish-embed flourish-chart" data-src="visualisation/29249657"><noscript><img src="https://public.flourish.studio/visualisation/29249657/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+
+	  
+  </section>
+
+  <section class="visual-section">
+    <h3>Explora la evolución por país</h3>
+
+    <p>
+      La visión global puede ocultar diferencias internas. Al seleccionar un país concreto,
+      aparecen perfiles científicos distintos: algunos mantienen una distribución relativamente
+      estable entre dominios, mientras otros muestran una producción más concentrada o irregular.
+    </p>
+
+	<div class="flourish-embed flourish-chart" data-src="visualisation/29249367"><noscript><img src="https://public.flourish.studio/visualisation/29249367/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+    
+
+  </section>
+</article>
+
+<article class="post featured" id="genero-autorias">
+  <header class="major">
+    <span class="date">Género inferido en las autorías</span>
+
+    <h2>
+      Más autorías femeninas, pero todavía lejos de la paridad
+    </h2>
+
+    <p>
+      Como última capa de análisis, se explora la evolución del género en las autorías
+      de artículos. La visualización muestra cómo cambia, entre 2000 y 2024,
+      el peso relativo de las autorías clasificadas como femeninas y masculinas.
+    </p>
+  </header>
+
+  <section class="visual-section">
+    <div class="flourish-embed flourish-chart" data-src="visualisation/29253139"></div>
+
+<p>
+  La visualización muestra una evolución positiva: el peso de las autorías femeninas
+  aumenta de forma progresiva entre 2000 y 2024. Sin embargo, la distancia respecto a las
+  autorías masculinas sigue siendo clara, por lo que la tendencia apunta a una mejora gradual,
+  pero todavía lejos de la paridad.
+</p>
+	  
+    <p class="note">
+      Nota metodológica: el género se ha inferido automáticamente a partir del nombre de pila.
+      Los nombres desconocidos o ambiguos se han excluido del cálculo porcentual. Por tanto,
+      los resultados no identifican el género real de personas concretas, sino que ofrecen una
+      estimación agregada para observar tendencias generales.
+    </p>
+  </section>
+</article>
+
+
+						
+						<!-- Posts -->
+							<section class="posts">
+
+							</section>
+
+						<!-- Footer -->
+					</div>
+
+				<!-- Footer -->
+<footer id="footer">
+  <section>
+    <p>
+      Proyecto de visualización de datos basado en datos de 
+      <a href="https://openalex.org/" target="_blank" rel="noopener noreferrer">OpenAlex</a>.
+    </p>
+    <p>
+      Diseño web basado en la plantilla <strong>Massively</strong> de 
+      <a href="https://html5up.net/" target="_blank" rel="noopener noreferrer">HTML5 UP</a>,
+      utilizada bajo licencia 
+      <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">CC BY 3.0</a>.
+      Plantilla modificada para este proyecto académico.
+    </p>
+  </section>
+
+
+	
+</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Manuel Merlo Torrente</li><li>Diseño base: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="https://public.flourish.studio/resources/embed.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
